@@ -6,7 +6,7 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from "./Cv-Dalla-Houssem.pdf";
 
 const Services = () => {
   // context
@@ -67,9 +67,7 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"Backend"}
-            detail={
-              "Node.js, Express.js, MongoDB,MySQL"
-            }
+            detail={"Node.js, Express.js, MongoDB,MySQL"}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

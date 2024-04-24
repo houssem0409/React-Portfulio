@@ -5,8 +5,7 @@ import "swiper/css";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import dipu from "../../img/Project/dipankar.png"
-
+import dipu from "../../img/Project/houssem.JPG";
 
 const Testimonial = () => {
   const clients = [
@@ -38,9 +37,11 @@ const Testimonial = () => {
         <span>Clients always get </span>
         <span>Exceptional Work </span>
         <span>from me...</span>
-        <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
+        <div
+          className="blur t-blur1"
+          style={{ background: "var(--purple)" }}
+        ></div>
         <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
-
       </div>
       <Swiper
         // install Swiper modules
