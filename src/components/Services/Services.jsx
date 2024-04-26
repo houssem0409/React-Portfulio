@@ -7,6 +7,7 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from "./Cv-Dalla-Houssem.pdf";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
   // context
@@ -18,17 +19,18 @@ const Services = () => {
     duration: 1,
     type: "spring",
   };
+  const { t } = useTranslation();
 
   return (
     <div className="services" id="services">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>Services</span>
+        <span style={{ color: darkMode ? "white" : "" }}>{t("MyAwesome")}</span>
+        <span>{t("Services")}</span>
 
         <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+          <button className="button s-button">{t("DownloadCV")}</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>

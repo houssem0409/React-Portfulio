@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Navbar from "./../Navbar/Navbar.jsx";
 import Intro from "./../Intro/Intro.jsx";
 import Services from "./../Services/Services.jsx";
@@ -11,20 +11,20 @@ import Progressbar from "./../Progressbar/Progressbar.jsx";
 import Footer from "./../Footer/Footer.jsx";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar />
-            <Intro />
-            <Services />
-            <Experience />
-            {/* <Works /> */}
-            <Portfolio />
-            <Progressbar />
-            {/* <Testimonial /> */}
-            <Contact />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Intro />
+      <Services />
+      <Experience />
+      {/* <Works /> */}
+      <Portfolio />
+      <Progressbar />
+      {/* <Testimonial /> */}
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

@@ -7,12 +7,14 @@ import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll'
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
+
 const Works = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
+  const { t } = useTranslation();
   // transition
   return (
     <div className="works" id="works">
@@ -20,19 +22,24 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span className="fw-bold text-uppercase" style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+          <span
+            className="fw-bold text-uppercase"
+            style={{ color: darkMode ? "white" : "" }}
+          >
+            {t("Works for All these")}
           </span>
           <span>Brands & Clients</span>
           <spane>
-            Web developers work independently as freelancers or with company teams to create websites.
+            Web developers work independently as freelancers or with company
+            teams to create websites.
             <br />
-            Depending on the job, these professionals may focus on front-end development,
+            Depending on the job, these professionals may focus on front-end
+            development,
             <br />
-            which includes site design and content creation or back-end development,
+            which includes site design and content creation or back-end
+            development,
             <br />
             including writing code to make website features work.
-
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>

@@ -5,10 +5,12 @@ import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import Linkdin from "@iconscout/react-unicons/icons/uil-linkedin";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
+  const { t } = useTranslation();
 
   return (
     <div className="footer">
@@ -36,10 +38,12 @@ const Footer = () => {
         </div>
         <div className="copyright-style">
           <p>
-            <small>Copyright &copy; {year}</small>
+            <small>
+              {t("Copyright")} &copy; {year}
+            </small>
           </p>
           <p>
-            <small>Develop By Dalla Houssem </small>
+            <small>{t("DevelopBy")} Dalla Houssem </small>
           </p>
         </div>
       </div>

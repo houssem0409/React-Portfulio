@@ -15,9 +15,13 @@ import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Resume from "./Cv-Dalla-Houssem.f0495662200f44c12d6c.pdf";
+import { useTranslation } from "react-i18next";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
+
+  const { t } = useTranslation();
 
   // context
   const theme = useContext(themeContext);
@@ -29,19 +33,23 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hello! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>
+            {t("HelloIam")}
+          </span>
           <span>Dalla Houssem</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            {t(
+              "FrontendDeveloperWithHighLevelOfExperienceInWebDesigningAndDevelopment"
+            )}
+            , {t("producingTheQualityWork")}
           </span>
         </div>
         <div>
           <Link to="contact" smooth={true} spy={true}>
-            <button className="button i-button ">Hire me</button>
+            <button className="button i-button ">{t("Hireme")}</button>
           </Link>
           <a className="ms-3" href={Resume} download>
-            <button className="button s-button">Resume</button>
+            <button className="button s-button">{t("Resume")}</button>
           </a>
         </div>
 
@@ -81,7 +89,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1={t("Web")} text2={t("Developer")} />
         </motion.div>
 
         {/* animation */}
@@ -92,7 +100,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" />
+          <FloatinDiv img={thumbup} text1={t("BestDesign")} />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
