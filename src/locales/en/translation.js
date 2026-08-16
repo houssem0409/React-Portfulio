@@ -36,7 +36,6 @@ const en = {
   DevelopBy: "Develop By",
   Hireme: "Hire me",
   Developer: "Developer",
-  Copyright: "Copyright ",
 };
 
 export default en;

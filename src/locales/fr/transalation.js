@@ -37,7 +37,6 @@ const fr = {
   DevelopBy: "Développé par",
   Hireme: "Engagez-moi",
   Developer: "Développeur",
-  Copyright: "droits d'auteur",
 };
 
 export default fr;

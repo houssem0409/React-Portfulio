@@ -37,7 +37,6 @@ const al = {
   DevelopBy: "Entwickelt von",
   Hireme: "Stellen Sie mich ein",
   Developer: "Entwicklerin",
-  Copyright: "Urheberrechte",
 };
 
 export default al;

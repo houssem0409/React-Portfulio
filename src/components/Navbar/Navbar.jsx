@@ -99,21 +99,21 @@ const Navbar = () => {
           <div className="lang-wrapper">
             <span
               className="one-lang"
-              style={actualLang == "en" ? { backgroundColor: "#bf55" } : {}}
+              style={actualLang === "en" ? { backgroundColor: "#bf55" } : {}}
               onClick={() => setLanguage("en")}
             >
               English
             </span>
             <span
               className="one-lang"
-              style={actualLang == "fr" ? { backgroundColor: "#bf55" } : {}}
+              style={actualLang === "fr" ? { backgroundColor: "#bf55" } : {}}
               onClick={() => setLanguage("fr")}
             >
               French
             </span>
             <span
               className="one-lang"
-              style={actualLang == "al" ? { backgroundColor: "#bf55" } : {}}
+              style={actualLang === "al" ? { backgroundColor: "#bf55" } : {}}
               onClick={() => setLanguage("al")}
             >
               Allemand
