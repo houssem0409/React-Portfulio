@@ -10,12 +10,11 @@ const Experience = () => {
   return (
     <div className="experience" id="experience">
       <div className="achievement">
-        {/* darkMode */}
         <div
           className="circle"
           style={{ color: darkMode ? "var(--orange)" : "" }}
         >
-          2
+          5
         </div>
         <span style={{ color: darkMode ? "white" : "" }}>{t("years")} </span>
         <span>{t("Experience")}</span>
@@ -25,7 +24,7 @@ const Experience = () => {
           className="circle"
           style={{ color: darkMode ? "var(--orange)" : "" }}
         >
-          10+
+          8+
         </div>
         <span style={{ color: darkMode ? "white" : "" }}>
           {t("completed")}{" "}
@@ -37,7 +36,7 @@ const Experience = () => {
           className="circle"
           style={{ color: darkMode ? "var(--orange)" : "" }}
         >
-          1
+          3
         </div>
         <span style={{ color: darkMode ? "white" : "" }}>
           {t("companies")}{" "}

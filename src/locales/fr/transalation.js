@@ -1,7 +1,7 @@
 const fr = {
   WorksForAllThese: "Fonctionne pour tous ceux-ci",
   FrontendDeveloperWithHighLevelOfExperienceInWebDesigningAndDevelopment:
-    "Développeur Frontend avec un haut niveau d'expérience en conception et développement web",
+    "Développeur Full Stack JavaScript spécialisé en systèmes temps réel — Node.js, React et React Native",
   producingTheQualityWork: "Produire un travail de qualité",
   MyAwesome: "Mon impressionnant",
   HelloIam: "Bonjour! Je suis",

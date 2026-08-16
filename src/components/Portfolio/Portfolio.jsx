@@ -2,16 +2,16 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import i from "../../img/kmayraSite.png";
-import h from "../../img/gymSite.png";
-import f from "../../img/ecommerceSite.png";
-import e from "../../img/Project/e.png";
-import d from "../../img/Project/d.png";
-import c from "../../img/Project/c.png";
-import b from "../../img/Project/b.png";
-import a from "../../img/Project/a.png";
+import zzdash from "../../img/Project/zzdash.png";
+import realsync from "../../img/Project/realsync.png";
 import { themeContext } from "../../Context";
 import { useTranslation } from "react-i18next";
+
+/**
+ * NOTE: replace zzdash.png / realsync.png with real product screenshots
+ * whenever you have them — these two files are placeholder cover cards
+ * so the section isn't empty. Everything else here is real, verified work.
+ */
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -27,24 +27,20 @@ const Portfolio = () => {
       {/* slider */}
       <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
+        breakpoints={{
+          768: { slidesPerView: 2 },
+        }}
         grabCursor={true}
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={i} alt="" />
-          <div className="text-center mt-2">
-            <a href="https://bsisa-client.vercel.app/" target="_blank">
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={h} alt="" />
+          <img src={zzdash} alt="ZZ Dash - Pizzaie client app" />
           <div className="text-center mt-2">
             <a
-              href="https://fitness-application-badi.vercel.app/"
+              href="https://play.google.com/store/apps/details?id=com.imaxeam01.pizzaappmobileclient"
               target="_blank"
+              rel="noreferrer"
             >
               <button className="button i-button">{t("LiveLink")}</button>
             </a>
@@ -52,63 +48,12 @@ const Portfolio = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={f} alt="" />
-          <div className="text-center mt-2">
-            <a href="https://ecommerce-front-v2.vercel.app/" target="_blank">
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={e} alt="" />
+          <img src={realsync} alt="RealSync Board - real-time Kanban" />
           <div className="text-center mt-2">
             <a
-              href="https://friendly-liskov-3700bc.netlify.app/"
+              href="https://github.com/houssem0409/realsync-board"
               target="_blank"
-            >
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={d} alt="" />
-          <div className="text-center mt-2">
-            <a
-              href="https://620e74e7f0001400a6ae5e0e--xenodochial-carson-23c011.netlify.app/"
-              target="_blank"
-            >
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={c} alt="" />
-          <div className="text-center mt-2">
-            <a
-              href="https://61eed2a6e9c59133c10fcb8e--xenodochial-carson-23c011.netlify.app/"
-              target="_blank"
-            >
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={b} alt="" />
-          <div className="text-center mt-2">
-            <a
-              href="https://dipankar11137.github.io/Assignment-2/index-ass-2.html"
-              target="_blank"
-            >
-              <button className="button i-button">{t("LiveLink")}</button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={a} alt="" />
-          <div className="text-center mt-2">
-            <a
-              href="https://dipankar11137.github.io/Assignment-1/"
-              target="_blank"
+              rel="noreferrer"
             >
               <button className="button i-button">{t("LiveLink")}</button>
             </a>

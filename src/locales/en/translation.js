@@ -1,7 +1,7 @@
 const en = {
   WorksForAllThese: "Works for all these",
   FrontendDeveloperWithHighLevelOfExperienceInWebDesigningAndDevelopment:
-    "Frontend Developer with a high level of experience in web designing and development",
+    "Full Stack JavaScript Developer specialized in real-time systems — Node.js, React & React Native",
   producingTheQualityWork: "Producing the quality work",
   MyAwesome: "My Awesome",
   HelloIam: "Hello! I am",
